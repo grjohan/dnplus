@@ -5,10 +5,12 @@
   "description": "Removes plus from DN",
   "version": "0.1",
 
-    "content_scripts": [
+  "content_scripts": [
     {
       "matches": ["http://www.dn.se/*"],
-      "js": ["removePlus.js"]
+      "js": ["removePlus.js"],
+      "run_at" : "document_end"
     }
   ]
+
 }

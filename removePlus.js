@@ -1,8 +1,8 @@
-removePlusFromTagName('a');
-removePlusFromTagName('img');
+removePlusFromTagName('*');
+//removePlusFromTagName('img');
 
 function removePlusFromTagName (tagName) {
-	var elems = document.getElementsByTagName(tagname);
+	var elems = document.getElementsByTagName(tagName);
 	var i;
 	for(i in elems){
 		var elem = elems[i];
