@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Remove plus comments",
+  "description": "Removes plus from DN",
+  "version": "0.1",
+
+    "content_scripts": [
+    {
+      "matches": ["http://www.dn.se/*"],
+      "js": ["removePlus.js"]
+    }
+  ]
+}
