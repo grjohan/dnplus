@@ -22,10 +22,8 @@ function removePlusFromTagName (tagName,removeClass) {
                     var parent = elem;
                     for(var j = 0; j < upLevels ; j++){
                         parent = parent.parentNode;
-                        if(j+1 === upLevels){
-                            parent.parentNode.removeChild(parent);	
-                        }
                     }
+                    parent.parentNode.removeChild(parent);	
                 }
             }
         }
