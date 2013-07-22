@@ -13,7 +13,7 @@ removePlusFromTagName('*',temp);
 function removePlusFromTagName (tagName,removeClass) {
     var elems = document.getElementsByTagName(tagName);
     var i;
-    for(i in elems){
+    for(i = 0; i < elems.length; i++){
         var elem = elems[i];
         if(elem.getAttribute){
             var classValues = elem.getAttribute('class');
